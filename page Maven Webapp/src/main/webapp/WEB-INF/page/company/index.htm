@@ -9,6 +9,44 @@
 <@body>
 
 <div id="tbar">
+	<!-- 操作  -->
+	<div style="background: #e6efff;padding: 5px;border:1px solid #99BBE8;">
+			
+		<a href="#" plain="true" class="easyui-linkbutton addDialog" iconCls="icon-add"
+		   mydata-options="title:'新增用户',url:'${base.contextPath}/addUser'">增加</a> 
+		   
+		 <a href="#" id="doedit" plain="true" class="easyui-linkbutton upDialog" iconCls="icon-edit"
+		   mydata-options="title:'修改用户',url:'${base.contextPath}/upUser'">修改</a>
+		   
+		 <a href="#" id="dodelete" plain="true" class="easyui-linkbutton delData" iconCls="icon-cancel"
+		   mydata-options="url:'${base.contextPath}/delUser'" >删除</a>  
+		     
+		<a href="#" plain="true" class="easyui-linkbutton reSet"
+			iconCls="icon-reset" mydata-options="formId:'parms'">清空</a> 
+			
+		<a href="#" plain="true" class="easyui-linkbutton exportData" iconCls="icon-excel" 
+		    mydata-options="url:'${base.contextPath}/downExcel'" >导出excel</a>   
+		    
+		<a href="#" data-options="hideId:'queryparms'" class="flR flR_XX"
+			title="向上"></a>
+	</div>
+
+	<!-- 条件查询 -->
+	 <div id="queryparms" style="background: #fff;padding: 5px;">
+		<form id="parms" method="post" >
+		<table  style="margin: 10px;width: 80%;" CELLSPACING="5px;">
+		<tr>
+<!-- 		<td>id&nbsp;&nbsp;&nbsp;: <input class="formText" name="id" style="width:100px"></td> -->
+		<td>姓&nbsp;&nbsp;&nbsp;名: <input class="formText" name="name" style="width:100px"></td>
+		<td>内&nbsp;&nbsp;&nbsp;容: <input class="formText" name="context" style="width:100px"></td>		
+		<td><a href="#" id="search" plain="true" class="easyui-linkbutton query" iconCls="icon-search"
+			mydata-options="url:'${base.contextPath}/selectUser'">查询</a></td>
+		</tr>	
+	    </table>
+        </form>
+     </div>
+</div>
+
 
 <p>企业信息展示</p>
  <div  data-options="region:'center',border:false" style="height:100%">
