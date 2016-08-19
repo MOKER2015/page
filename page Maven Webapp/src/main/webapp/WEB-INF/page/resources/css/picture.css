@@ -1,0 +1,55 @@
+.poRe {position:relative;}
+/*�ϴ���Ƭ ����*/
+.TscPhoto {position:absolute; left:-470px; top:0px; padding:10px 5px 20px; width:435px; border:1px solid #c7c7c7; background-color:#E9E9EA; text-align:center;}
+.TscPhoto h5 {float:left; padding-left:18px; width:200px; height:25px; font-size:14px; font-weight:bold; color:#737373; text-align:left;}
+.TscPhoto a {display:block; float:right; width:19px; height:17px; line-height:17px; border:1px solid #c7c7c7; background-color:white; color:#737373; font-size:14px; font-weight:normal; text-decoration:none;}
+
+.TscCon, .EditName {margin:0px auto; padding-top:15px; padding-bottom:15px; width:92%; border:1px solid #c7c7c7; background-color:white;}
+.TscCon div {height:25px;}
+.TscCon .xsAddress {display:inline-block; padding-left:5px; width:200px; height:22px; line-height:22px; *height:25px; *line-height:25px; border:1px solid #014DA2; background-color:white; color:#737373; text-align:left;}
+.TscPhoto .TscCon input, .EditName dd input.btn_EN {padding:0px 10px; *padding:0px; height:24px; *height:27px; border:1px solid #014DA2; background-color:#014DA2; color:white; cursor:pointer; vertical-align:top;}
+.TscCon p {padding-top:5px; line-height:20px; text-align:center;}
+
+.fl {float:left;}
+.dis_none {display:none;}
+
+.photo {padding-top:8px; width:115px; text-align:center;}
+.photo img {border:1px solid #ccc;}
+.photo a:link,
+.photo a:visited,
+.photo a:hover,
+.photo a:active {text-decoration:none;}
+
+/*selectԪ��ģ�� ��� ��Ӧ start*/
+.mrR5{margin-right:5px;}
+
+.fontRed {color:red;}
+
+/*上传图片样式*/
+.TscPhotos {position:absolute; left:-470px; top:0px; padding:10px 5px 20px; width:435px; border:1px solid #c7c7c7; background-color:#E9E9EA; text-align:center;}
+.TscPhotos h5 { padding-left:18px; width:200px; height:25px; font-size:14px; font-weight:bold; color:#737373; text-align:left;}
+.TscPhotos a {display:block; float:right; width:19px; height:17px; line-height:17px; border:1px solid #c7c7c7; background-color:white; color:#737373; font-size:14px; font-weight:normal; text-decoration:none;}
+
+
+.TscPhotos .TscConp input{padding:0px 5px; *padding:0px; height:24px; *height:27px; border:1px solid #014DA2; background-color:#014DA2; color:white; cursor:pointer; vertical-align:top;}
+
+/*logo样式*/
+.logoButton {display: inline-block;position: relative;margin: 10px;padding: 0 20px;text-align: center;text-decoration: none;font: bold 12px/25px Arial, sans-serif;
+    text-shadow: 1px 1px 1px rgba(255,255,255, .22);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+}
+.gray {color: #515151;background: #ABA9A9;}
+
+.imgLogo {width: 200px;height: 150px;}
+
+

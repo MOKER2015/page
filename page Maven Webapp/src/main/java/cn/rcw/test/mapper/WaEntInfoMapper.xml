@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.rcw.test.dao.WaEntInfoMapper">
+	<resultMap id="BaseResultMap" type="cn.rcw.test.entity.WaEntInfo">
+		<id column="ENT_CODE" property="entCode" jdbcType="VARCHAR" />
+		<result column="ENT_NAME" property="entName" jdbcType="VARCHAR" />
+		<result column="INDST_ID" property="indstId" jdbcType="VARCHAR" />
+		<result column="INDST_NAME" property="indstName" jdbcType="VARCHAR" />
+		<result column="EST_YEAR" property="estYear" jdbcType="VARCHAR" />
+		<result column="FUNDS_ID" property="fundsId" jdbcType="VARCHAR" />
+		<result column="CURRENCY" property="currency" jdbcType="VARCHAR" />
+		<result column="SIZE_ID" property="sizeId" jdbcType="INTEGER" />
+		<result column="BENEFITS" property="benefits" jdbcType="VARCHAR" />
+		<result column="BASE_BENEFITS" property="baseBenefits" jdbcType="VARCHAR" />
+		<result column="BASE_BENEFITSNAME" property="baseBenefitsName" jdbcType="VARCHAR" />
+		<result column="ENT_DESC" property="entDesc" jdbcType="VARCHAR" />
+		<result column="ADDR_ID" property="addrId" jdbcType="VARCHAR" />
+		<result column="ADDR" property="addr" jdbcType="VARCHAR" />
+		<result column="COMMU_ADDR" property="commuAddr" jdbcType="VARCHAR" />
+		<result column="ZIPCODE" property="zipcode" jdbcType="VARCHAR" />
+		<result column="CONTACT" property="contact" jdbcType="VARCHAR" />
+		<result column="PHONE" property="phone" jdbcType="VARCHAR" />
+		<result column="FAX" property="fax" jdbcType="VARCHAR" />
+		<result column="MOBILE" property="mobile" jdbcType="VARCHAR" />
+		<result column="EMAIL" property="email" jdbcType="VARCHAR" />
+		<result column="LICENCE_NUM" property="licenceNum" jdbcType="VARCHAR" />
+		<result column="BRAND" property="brand" jdbcType="VARCHAR" />
+		<result column="WEBSITE" property="website" jdbcType="VARCHAR" />
+		<result column="AUDIT_STATUS" property="auditStatus" jdbcType="INTEGER" />
+		<result column="SHIELD_STATUS" property="shieldStatus" jdbcType="INTEGER" />
+		<result column="DEL_STATUS" property="delStatus" jdbcType="INTEGER" />
+		<result column="COMMENT" property="comment" jdbcType="VARCHAR" />
+		<result column="DRAFT_STATU" property="draftStatu" jdbcType="INTEGER" />
+		<result column="ARCHIVED_STATU" property="archivedStatu" jdbcType="INTEGER" />
+		<result column="MAP_ID" property="mapId" jdbcType="VARCHAR" />
+		
+		<result column="ENT_LOGO" property="entLogo" jdbcType="VARCHAR" />
+		<result column="ENT_PICONE" property="entPicOne" jdbcType="VARCHAR" />
+		<result column="ENT_PICTWO" property="entPicTwo" jdbcType="VARCHAR" />
+		<result column="ENT_PICTHREE" property="entPicThree" jdbcType="VARCHAR" />
+		<result column="ENT_PICFOUR" property="entPicFour" jdbcType="VARCHAR" />
+		<result column="ENT_PICFIVE" property="entPicFive" jdbcType="VARCHAR" />
+		<result column="ENT_PICSIX" property="entPicSix" jdbcType="VARCHAR" />
+		
+		<result column="ENT_LOGO_NAME" property="entLogoName" jdbcType="VARCHAR" />
+		<result column="ENT_PICONE_NAME" property="entPicOneName" jdbcType="VARCHAR" />
+		<result column="ENT_PICTWO_NAME" property="entPicTwoName" jdbcType="VARCHAR" />
+		<result column="ENT_PICTHREE_NAME" property="entPicThreeName" jdbcType="VARCHAR" />
+		<result column="ENT_PICFOUR_NAME" property="entPicFourName" jdbcType="VARCHAR" />
+		<result column="ENT_PICFIVE_NAME" property="entPicFiveName" jdbcType="VARCHAR" />
+		<result column="ENT_PICSIX_NAME" property="entPicSixName" jdbcType="VARCHAR" />
+		
+		<result column="CONTACT_SHOW" property="contactShow" jdbcType="INTEGER" />
+		<result column="PHONE_SHOW" property="phoneShow" jdbcType="INTEGER" />
+		<result column="EMAIL_SHOW" property="emailShow" jdbcType="INTEGER" />
+        <result column="TEMP_NAME" property="tempName" jdbcType="VARCHAR" />
+        <result column="BAT_NO" property="batNo" jdbcType="VARCHAR" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		ENT_CODE, ENT_NAME, INDST_ID, INDST_NAME,
+		EST_YEAR, FUNDS_ID,CURRENCY,
+		SIZE_ID, BASE_BENEFITS,BASE_BENEFITSNAME,
+		BENEFITS, ENT_DESC,ADDR_ID, ADDR,COMMU_ADDR, ZIPCODE, CONTACT, PHONE,
+		FAX,
+		MOBILE, EMAIL,
+		LICENCE_NUM,BRAND, WEBSITE, AUDIT_STATUS, SHIELD_STATUS, DEL_STATUS,
+		COMMENT,
+		DRAFT_STATU,
+		ARCHIVED_STATU,MAP_ID,ENT_LOGO,ENT_PICONE,ENT_PICTWO,ENT_PICTHREE,
+		ENT_PICFOUR,ENT_PICFIVE,ENT_PICSIX,ENT_LOGO_NAME,ENT_PICONE_NAME,ENT_PICTWO_NAME,ENT_PICTHREE_NAME,
+		ENT_PICFOUR_NAME,ENT_PICFIVE_NAME,ENT_PICSIX_NAME,
+		CONTACT_SHOW,PHONE_SHOW,EMAIL_SHOW,TEMP_NAME
+	</sql>
+	<select id="selectAll" resultMap="BaseResultMap" parameterType="cn.rcw.test.entity.WaEntInfoVo">
+		select * 
+	    from wa_ent_info as w limit 100
+	</select>
+	<select id="insert" parameterType="cn.rcw.test.entity.WaEntInfo" >
+	    insert into wa_ent_info
+		(ENT_CODE, ENT_NAME, 
+		INDST_ID, INDST_NAME, EST_YEAR,
+		FUNDS_ID, SIZE_ID, BENEFITS, BASE_BENEFITS,
+		ENT_DESC,ADDR_ID, ADDR,COMMU_ADDR, ZIPCODE,
+		CONTACT, PHONE, FAX,
+		MOBILE, EMAIL, LICENCE_NUM,BRAND,
+		WEBSITE, AUDIT_STATUS, SHIELD_STATUS,
+		DEL_STATUS, COMMENT, DRAFT_STATU,
+		ARCHIVED_STATU,MAP_ID,ENT_LOGO,ENT_PICONE,ENT_PICTWO,ENT_PICTHREE,
+		ENT_PICFOUR,ENT_PICFIVE,ENT_PICSIX,ENT_LOGO_NAME,ENT_PICONE_NAME,ENT_PICTWO_NAME,ENT_PICTHREE_NAME,
+		ENT_PICFOUR_NAME,ENT_PICFIVE_NAME,ENT_PICSIX_NAME,TEMP_NAME)
+		values
+		(#{entCode,jdbcType=VARCHAR}, #{entName,jdbcType=VARCHAR},
+		#{indstId,jdbcType=VARCHAR},
+		#{indstName,jdbcType=VARCHAR}, #{estYear,jdbcType=VARCHAR},
+		#{fundsId,jdbcType=VARCHAR}, #{sizeId,jdbcType=INTEGER},
+		#{benefits,jdbcType=VARCHAR}, #{baseBenefits,jdbcType=VARCHAR},
+		#{entDesc,jdbcType=VARCHAR},#{addrId,jdbcType=VARCHAR},
+		#{addr,jdbcType=VARCHAR}, #{commuAddr,jdbcType=VARCHAR},#{zipcode,jdbcType=VARCHAR},
+		#{contact,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR},
+		#{fax,jdbcType=VARCHAR},
+		#{mobile,jdbcType=VARCHAR},
+		#{email,jdbcType=VARCHAR}, #{licenceNum,jdbcType=VARCHAR}, #{brand,jdbcType=VARCHAR},
+		#{website,jdbcType=VARCHAR}, #{auditStatus,jdbcType=INTEGER},
+		#{shieldStatus,jdbcType=INTEGER},
+		#{delStatus,jdbcType=INTEGER},
+		#{comment,jdbcType=VARCHAR}, #{draftStatu,jdbcType=INTEGER},
+		#{archivedStatu,jdbcType=INTEGER},
+		#{mapId,jdbcType=VARCHAR},#{entLogo,jdbcType=VARCHAR},#{entPicOne,jdbcType=VARCHAR},
+		#{entPicTwo,jdbcType=VARCHAR}
+		,#{entPicThree,jdbcType=VARCHAR},#{entPicFour,jdbcType=VARCHAR},
+		#{entPicFive,jdbcType=VARCHAR},#{entPicSix,jdbcType=VARCHAR},
+		#{entLogoName,jdbcType=VARCHAR},#{entPicOneName,jdbcType=VARCHAR},
+		#{entPicTwoName,jdbcType=VARCHAR},#{entPicThreeName,jdbcType=VARCHAR},#{entPicFourName,jdbcType=VARCHAR},
+		#{entPicFiveName,jdbcType=VARCHAR},#{entPicSixName,jdbcType=VARCHAR},
+		#{tempName,jdbcType=VARCHAR)
+	</select>
+	<delete id="deleteByIds" parameterType="java.util.List">
+		delete from wa_ent_info  
+ 	    where ENT_CODE in 
+        <foreach collection="list" item = "id" open="(" separator="," close=")">
+        #{ id} 
+       </foreach>
+	</delete>
+	<update  id="updateByPrimaryKey" parameterType="cn.rcw.test.entity.WaEntInfo">
+	    update wa_ent_info
+		<set>
+			<if test="entName != null">ENT_NAME = #{entName,jdbcType=VARCHAR},</if>
+			<if test="indstId != null">INDST_ID = #{indstId,jdbcType=VARCHAR},</if>
+			<if test="indstName != null">INDST_NAME = #{indstName,jdbcType=VARCHAR},</if>
+			<if test="typeId != null">TYPE_ID = #{typeId,jdbcType=VARCHAR},</if>
+			<if test="estYear != null">EST_YEAR = #{estYear,jdbcType=VARCHAR},</if>
+			<if test="fundsId != null">FUNDS_ID = #{fundsId,jdbcType=VARCHAR},</if>
+			<if test="sizeId != null">SIZE_ID = #{sizeId,jdbcType=INTEGER},</if>
+			<if test="benefits != null">BENEFITS = #{benefits,jdbcType=VARCHAR},</if>
+			<if test="baseBenefits != null">BASE_BENEFITS = #{baseBenefits,jdbcType=VARCHAR},</if>
+			<if test="entDesc != null">ENT_DESC = #{entDesc,jdbcType=VARCHAR},</if>
+			<if test="addrId != null">ADDR_ID = #{addrId,jdbcType=VARCHAR},</if>
+			<if test="addr != null">ADDR = #{addr,jdbcType=VARCHAR},</if>
+			<if test="commuAddr != null">COMMU_ADDR = #{commuAddr,jdbcType=VARCHAR},</if>			
+			<if test="zipcode != null">ZIPCODE = #{zipcode,jdbcType=VARCHAR},</if>
+			<if test="contact != null">CONTACT = #{contact,jdbcType=VARCHAR},</if>
+			<if test="phone != null">PHONE = #{phone,jdbcType=VARCHAR},</if>
+			<if test="fax != null">FAX = #{fax,jdbcType=VARCHAR},</if>
+			<if test="mobile != null">MOBILE = #{mobile,jdbcType=VARCHAR},</if>
+			<if test="email != null">EMAIL = #{email,jdbcType=VARCHAR},</if>
+			<if test="licenceNum != null">LICENCE_NUM = #{licenceNum,jdbcType=VARCHAR},</if>
+			<if test="brand != null">BRAND = #{brand,jdbcType=VARCHAR},</if>
+			<if test="website != null">WEBSITE = #{website,jdbcType=VARCHAR},</if>
+			<if test="auditStatus != null">AUDIT_STATUS = #{auditStatus,jdbcType=INTEGER},</if>
+			<if test="shieldStatus != null">SHIELD_STATUS = #{shieldStatus,jdbcType=INTEGER},</if>
+			<if test="delStatus != null">DEL_STATUS = #{delStatus,jdbcType=INTEGER},</if>
+			<if test="comment != null">COMMENT = #{comment,jdbcType=VARCHAR},</if>
+			<if test="draftStatu != null">DRAFT_STATU = #{draftStatu,jdbcType=INTEGER},</if>
+			<if test="archivedStatu != null">ARCHIVED_STATU = #{archivedStatu,jdbcType=INTEGER},</if>
+			<if test="mapId != null">MAP_ID = #{mapId,jdbcType=VARCHAR},</if>
+			<if test="entLogo != null ">ENT_LOGO = #{entLogo,jdbcType=VARCHAR},</if>
+			<if test="entPicOne != null ">ENT_PICONE = #{entPicOne,jdbcType=VARCHAR},</if>
+			<if test="entPicTwo != null ">ENT_PICTWO = #{entPicTwo,jdbcType=VARCHAR},</if>
+			<if test="entPicThree != null ">ENT_PICTHREE = #{entPicThree,jdbcType=VARCHAR},</if>
+			<if test="entPicFour != null ">ENT_PICFOUR = #{entPicFour,jdbcType=VARCHAR},</if>
+			<if test="entPicFive != null ">ENT_PICFIVE = #{entPicFive,jdbcType=VARCHAR},</if>
+			<if test="entPicSix != null ">ENT_PICSIX = #{entPicSix,jdbcType=VARCHAR},</if>			
+			<if test="entLogoName != null and  entLogoName != ''">ENT_LOGO_NAME = #{entLogoName,jdbcType=VARCHAR},</if>
+			<if test="entPicOneName != null and  entPicOneName != ''">ENT_PICONE_NAME = #{entPicOneName,jdbcType=VARCHAR},</if>
+			<if test="entPicTwoName != null and  entPicTwoName != ''"> ENT_PICTWO_NAME = #{entPicTwoName,jdbcType=VARCHAR},</if>
+			<if test="entPicThreeName != null and  entPicThreeName != ''">ENT_PICTHREE_NAME = #{entPicThreeName,jdbcType=VARCHAR},</if>
+			<if test="entPicFourName != null and  entPicFourName != ''">ENT_PICFOUR_NAME = #{entPicFourName,jdbcType=VARCHAR},</if>
+			<if test="entPicFiveName != null and  entPicFiveName != ''">ENT_PICFIVE_NAME = #{entPicFiveName,jdbcType=VARCHAR},</if>
+			<if test="entPicSixName != null and  entPicSixName != ''">ENT_PICSIX_NAME = #{entPicSixName,jdbcType=VARCHAR},</if>
+			<if test="contactShow != null">CONTACT_SHOW = #{contactShow,jdbcType=INTEGER},</if>
+			<if test="phoneShow != null">PHONE_SHOW = #{phoneShow,jdbcType=INTEGER},</if>
+			<if test="emailShow != null">EMAIL_SHOW = #{emailShow,jdbcType=INTEGER},</if>
+		    <if test="tempName != null" >TEMP_NAME = #{tempName,jdbcType=VARCHAR},</if>			 
+		</set>
+		where ENT_CODE = #{entCode,jdbcType=VARCHAR}
+	</update>
+	<select id="selectByRecord" parameterType="cn.rcw.test.entity.WaEntInfo">
+	    select
+		<include refid="Base_Column_List" />
+		from wa_ent_info
+		<where>
+			1=1 
+			<if test="entName != null"> and ENT_NAME = #{entName,jdbcType=VARCHAR}</if>
+			<if test="indstName != null"> and INDST_NAME = #{indstName,jdbcType=VARCHAR}</if>
+			<if test="contact != null"> and CONTACT = #{contact,jdbcType=VARCHAR}</if>
+			<if test="addr != null"> and ADDR = #{addr,jdbcType=VARCHAR}</if>
+			<if test="phone != null"> and PHONE = #{phone,jdbcType=VARCHAR}</if>
+			<if test="mobile != null"> and MOBILE = #{mobile,jdbcType=VARCHAR}</if>
+			<if test="licenceNum != null"> and LICENCE_NUM = #{licenceNum,jdbcType=VARCHAR}</if>
+		</where>
+	</select>
+	<select id="getWaEntInfoByIds" parameterType="java.util.List">
+		select 
+		<include refid="Base_Column_List" />
+	    from wa_ent_info 
+	    where ENT_CODE in 
+        <foreach collection="list" item = "id" open="(" separator="," close=")">
+        #{ id} 
+       </foreach>
+	</select>
+</mapper>

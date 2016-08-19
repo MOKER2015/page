@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{font-family:Arial, "微软雅黑", "宋体"; font-size:12px;}
+body, div, form, input, button, p {margin:0px; padding:0px;}
+a img {border:none;}
+a {text-decoration:none;}
+a:link, a:visited {text-decoration:none;}
+a{bblr:expression(this.onFocus=this.blur()); outline-style:none;}
+/*=========================================================================*/
+body {background:url(../images/Login_bgx.jpg) left top repeat-x #38a0d5;}
+.wrapbgM {background:url(../images/Loginbg.jpg) center top no-repeat;}
+.wrapbg {
+		  background-image:url(../images/bgLT.png), url(../images/bgRT.png);
+		  background-position:left top, right top;
+		  background-repeat:no-repeat, no-repeat;
+		}
+.wrap {margin:0px auto; padding-top:190px; padding-left:20px; width:347px; height:410px;}
+	.inpText {margin-bottom:18px; padding-top:3px; padding-left:42px; width:285px; height:34px; background-repeat:no-repeat;}
+	.bgUser {background:url(../images/userBg.jpg) 0px 0px;}
+	.bgPsw {position:relative; background:url(../images/userBg.jpg) 0px -37px;}
+		.inpText input {width:280px; height:30px; line-height:30px; border:none; _background:none; font-family:"微软雅黑"; font-size:14px;}
+		
+		.bgUser input,
+		.yzm input {color:#d3d3d3;}
+		.bgUser input.textCo_on,
+		.yzm input.textCo_on {color:#005b8e;}
+		.bgUser input.textCo,
+		.yzm input.textCo {color:#d3d3d3;}
+		
+		.bgPsw input {position:absolute; left:42px; top:3px; z-index:3; background:none; color:#005b8e;}
+		.bgPsw span {position:absolute; left:42px; top:8px; display:inline-block; width:75px; height:20px; line-height:20px; font-family:"微软雅黑"; font-size:14px; color:#d3d3d3; z-index:2}
+		
+	.yzm {margin-bottom:18px; height:37px;}
+	.yzm input {margin-right:10px; padding-left:10px; width:145px; height:34px; line-height:34px; border:1px solid #ccc; vertical-align:middle; font-family:"微软雅黑"; font-size:14px;}
+	.yzm img {margin-right:10px; border:1px solid #b2b2b2; vertical-align:middle;}
+	.yzm a {display:inline-block; width:70px; height:36px; line-height:36px;}
+	.yzm a:link,
+	.yzm a:visited {font-size:14px; color:#b2b2b2; background:url(../images/Icon_Refresh.jpg) right 70% no-repeat;}
+	.yzm a:hover,
+	.yzm a:active {font-size:14px; color:#1c75a7; background:url(../images/Icon_RefreshH.jpg) right 70% no-repeat;}
+	
+	.btn {margin-bottom:18px;}
+	.btn input {width:157px; height:36px; cursor:pointer; font-family:"微软雅黑"; font-size:14px; font-weight:bold; color:#fff;}
+	.btnLogin {margin-right:10px; border:1px solid #d2650f; background-color:#ed6d09;}
+	.btnReset {border:1px solid #1c75a7; background-color:#2281b7;}
+	
+	.fgPsw {margin-bottom:65px; text-align:center;}
+		.fgPsw a {font-size:14px; color:#888;}
+		.fgPsw a:link,
+		.fgPsw a:visited {color:#919191;}
+		.fgPsw a:hover,
+		.fgPsw a:active {color:#1c75a7;}
+	
+	.copyRight {text-align:center; color:#0b5882;}
+
+
+
+
+
+
+

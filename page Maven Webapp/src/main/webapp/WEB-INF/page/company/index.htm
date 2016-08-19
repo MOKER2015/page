@@ -1,0 +1,77 @@
+<#include "/comm/layout.html">
+<@head title="简历管理">
+  <!--  <script type="text/javascript" src='${base.contextPath}/resources/js/comm/default-grid.js'> </script> -->
+   <script type="text/javascript" src='${base.contextPath}/resources/js/selector/selector.js'> </script>
+   <script type="text/javascript" src='${base.contextPath}/resources/js/selector/selectorfunction.js'> </script>
+   <link href="${base.contextPath}/resources/css/select.css" rel="stylesheet" type="text/css" />
+   <link href="${base.contextPath}/resources/css/thickbox.css" rel="stylesheet" type="text/css" />
+</@head>
+<@body>
+
+<div id="tbar">
+
+<p>企业信息展示</p>
+ <div  data-options="region:'center',border:false" style="height:100%">
+	<table id="grid" class="easyui-datagrid" >
+        <thead>
+    		<tr>
+    			<th data-options="field:'id',checkbox:true"></th>
+     			<th data-options="field:'addr',width:'auto',align:'center'">公司地址</th>
+     			<th data-options="field:'licenceNum',width:'auto',align:'center'">营业执照编号</th>
+    			<th data-options="field:'contact',width:'auto',align:'center'">联系人</th>
+    			<th data-options="field:'phone',width:'auto',align:'center'">联系电话</th>
+    			<th data-options="field:'mobile',width:'auto',align:'center'">手机号码</th>
+    			<th data-options="field:'email',width:'auto',align:'center'">Email</th>
+    		</tr>
+        </thead>
+    </table>
+</div>
+</@body>
+<script  type="text/javascript">
+//datagrid初始化
+$(function () {  
+    $('#grid').datagrid({ 
+        iconCls:'icon-edit',//图标        
+        nowrap: false, 
+        striped: true, 
+        border: true,
+        autoRowHeight:true,
+        url:'${base.contextPath}/company/show',
+       /*  fitColumns:true, */
+        collapsible:false,//是否可折叠的 
+        pagination:true,//分页控件 
+        rownumbers:true,//行号
+        pageSize: 15,//每页显示的记录条数，默认为10 
+        pageList: [15,25,35],//可以设置每页记录条数的列表 
+        frozenColumns:[[ 
+
+        ]], 
+        toolbar: [{ 
+            text: '添加', 
+            iconCls: 'icon-add', 
+            handler: function() { 
+                openDialog("add_dialog","add"); 
+            } 
+        }, '-', { 
+            text: '修改', 
+            iconCls: 'icon-edit', 
+            handler: function() { 
+                openDialog("add_dialog","edit"); 
+            } 
+        }, '-',{ 
+            text: '删除', 
+            iconCls: 'icon-remove', 
+            handler: function(){ 
+                delAppInfo(); 
+            } 
+        }], 
+    }); 
+    //设置分页控件 
+    var p = $('#grid').datagrid('getPager'); 
+    $(p).pagination({  
+        beforePageText: '第',//页数文本框前显示的汉字 
+        afterPageText: '页    共 {pages} 页', 
+        displayMsg: ' 共 {total} 条记录', 
+    });
+}); 
+</script>

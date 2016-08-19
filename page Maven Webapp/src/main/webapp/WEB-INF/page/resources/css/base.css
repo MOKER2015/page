@@ -1,0 +1,175 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td
+	{
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+}
+
+html,body {
+	font: 12px tahoma, Arial, "����", Verdana, sans-serif;
+	background-color: #ffffff;
+}
+
+ul,li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img{border:none;}
+.oh {
+	overflow: hidden;
+}
+#menuFrame li a{
+	height: 30px;
+	line-height: 30px;
+	margin-left: 10px;
+}
+.required{
+	color:red;
+}
+.main{
+	width:875px;
+	height:500px;
+	margin:0 auto;
+	position:relative;
+	background: url(../images/theme.jpg) 0px 0px no-repeat;
+}
+.notice{
+	width:400px;
+	top:200px;
+	left:30px;
+	position:absolute;
+	line-height:20px;
+}
+.notice h2{
+	width:100%;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+.notice .content{
+	font-size:12px;
+	text-indent:24px;
+	min-height:150px;
+}
+.notice .footer div{
+	text-align:right;
+}
+input.formButton {
+	width: 70px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+	font-size: 12px;
+	border: none;
+	background: url(../images/form_bg.gif) 0px 0px no-repeat;
+}
+
+input.formButton:hover {
+	color: #ff6600;
+	background: url(../images/form_bg.gif) 0px -30px no-repeat;
+}
+.inputTableDiv{
+	margin:0 auto;
+	width:100%;
+}
+table.inputTable{
+	width:100%;
+}
+.inputTable td:nth-child(2n+1){
+	white-space:nowrap;
+	width:30px;
+	text-align:right;
+}
+.inputTable td:nth-child(2n){
+	white-space:nowrap;
+	/*width:35%;*/
+}
+table.inputTable td {
+	padding: 5px 10px 5px 0px;
+	margin:0 auto;
+}
+div.formSearch{
+	padding: 5px 10px 5px 0px;
+	line-height:25px;
+}
+input.formText {
+	width: 157px;
+	border-style: solid;
+	border: 1px solid #95B8E7;
+	height: 18px;
+}
+input.formSmallText {
+	width: 70px;
+	border-style: solid;
+	border: 1px solid #95B8E7;
+	height: 18px;
+}
+input.formsnsText {
+	width: 157px;
+	border-style: solid;
+	border: 1px solid #95B8E7;
+	height: 18px;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-image: url(../images/query.gif);
+}
+input.validatebox-invalid {
+    border-color: #ffa8a8;
+}
+input[type="file"] {
+	width: 197px;
+}
+input.formText:hover {
+	border: 1px solid #ff9b1f;
+	background-color: #fefbf7;
+}
+
+textarea.formTextarea {
+	width: 428px;
+	height: 100px;
+	padding: 2px;
+	border: 1px solid #95B8E7;
+}
+
+textarea.formTextarea:hover {
+	border: 1px solid #ff9b1f;
+	background-color: #fefbf7;
+}
+
+textarea.formTextarea:focus {
+	background-color: #fff8ef;
+}
+
+select.multiselect {
+	border: 1px solid #95B8E7;
+}
+
+select.multiselect:hover {
+	border: 1px solid #ff9b1f;
+	background-color: #fefbf7;
+}
+
+select.multiselect:focus {
+	background-color: #fff8ef;
+}
+.southBtns {
+	border-top: 1px solid #CACACA;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+}
+
+/*上 下按钮*/
+.flR {float:right; margin-top:5px; margin-right:5px; width:15px; height:15px;background:url(../images/tools-sprites-trans.gif) no-repeat;}
+
+	.flR_SS:link, .flR_SS:visited {background-position:0px -60px;}
+	.flR_SS:hover, .flR_SS:active {background-position:-15px -60px;}
+	.flR_XX:link, .flR_XX:visited {background-position:0px -75px;}
+	.flR_XX:hover, .flR_XX:active {background-position:-15px -75px;}

@@ -1,0 +1,57 @@
+#divtt {
+	BORDER-RIGHT: #adb9c2 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #adb9c2 1px solid; PADDING-LEFT: 0px; BACKGROUND: url(../../resources/images/back.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: #adb9c2 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #adb9c2 1px solid
+}
+#divtt TD.tt {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 26px; FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: url(../../resources/images/ttico4.gif) no-repeat 5px 5px; PADDING-BOTTOM: 0px; COLOR: #333; LINE-HEIGHT: 26px; PADDING-TOP: 0px
+}
+#divtt A {
+	COLOR: #006699; MARGIN-RIGHT: 4px; TEXT-DECORATION: none
+}
+#divtt SPAN {
+	COLOR: #006699; MARGIN-RIGHT: 4px; TEXT-DECORATION: none
+}
+#divtt A:active {
+	COLOR: #ffa40b; TEXT-DECORATION: underline
+}
+#divtt A:hover {
+	COLOR: #ffa40b; TEXT-DECORATION: underline
+}
+.select_td {
+	
+}
+.select_td TD {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 2px; PADDING-TOP: 2px
+}
+.div_p span.hong{
+	color:#0099CC;
+	font-weight:normal;
+}
+.dl {
+	FONT-WEIGHT: bold; BACKGROUND: #f2f2f2; COLOR: #333; LINE-HEIGHT: 26px
+}
+.case {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: url(../../resources/images/search_case.gif) no-repeat; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 130px; HEIGHT: 21px; BORDER-RIGHT-WIDTH: 0px
+}
+.td_width {
+	OVERFLOW: hidden; WIDTH: 33%; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis
+}
+.div_p {
+	BORDER-RIGHT: #999 1px solid; PADDING-RIGHT: 8px; BORDER-TOP: #999 1px solid; PADDING-LEFT: 8px; BACKGROUND: #fff; PADDING-BOTTOM: 8px; MARGIN: 24px 0px 0px; BORDER-LEFT: #999 1px solid; PADDING-TOP: 8px; BORDER-BOTTOM: #999 1px solid; POSITION: absolute
+}
+.div_l_js {
+	BORDER-RIGHT: #999 1px solid; PADDING-RIGHT: 8px; BORDER-TOP: #999 1px solid; PADDING-LEFT: 8px; BACKGROUND: #fff; PADDING-BOTTOM: 8px; MARGIN: 24px 0px 0px -420px; BORDER-LEFT: #999 1px solid; PADDING-TOP: 8px; BORDER-BOTTOM: #999 1px solid; POSITION: absolute
+}
+/**
+.div_c {
+	BORDER-RIGHT: #999 1px solid; PADDING-RIGHT: 8px; BORDER-TOP: #999 1px solid; PADDING-LEFT: 8px; BACKGROUND: #fff; PADDING-BOTTOM: 8px; MARGIN: 24px 0px 0px -320px; BORDER-LEFT: #999 1px solid; PADDING-TOP: 8px; BORDER-BOTTOM: #999 1px solid; POSITION: absolute
+}
+**/
+
+.div_c { padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; margin-top: 24px; margin-right: 0px; margin-bottom: 0px; margin-left: -320px; border-top-color: #999; border-right-color: #999; border-bottom-color: #999; border-left-color: #999; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; position: absolute; border-image-source: none; border-image-slice: 100%; border-image-width: 1; border-image-outset: 0; border-image-repeat: stretch; background-image: none; background-attachment: scroll; background-repeat: repeat; background-position-x: 0%; background-position-y: 0%; background-size: auto; background-origin: padding-box; background-clip: border-box; background-color: rgb(255, 255, 255); }
+
+.div_p .TableFSTd tr td {height:22px; line-height:22px; text-align: left;} /*checkbox ��� .TableFSTd*/
+.div_p .TableFSTd tr td input {vertical-align:middle;}
+.div_p a:link, .div_p a:visited {color:#464646; text-decoration:none;}
+.div_p a:hover {color:#f00; text-decoration:underline;}
+.div_p a:active {color:#464646; text-decoration:none;}
+

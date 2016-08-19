@@ -1,0 +1,54 @@
+<#macro head title charset="utf-8" lang="zh-CN">
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=${charset}" />
+		<meta http-equiv="Content-Language" content="${lang}"/>
+		<title>${title}</title>
+		<meta http-equiv="Cache-Control" content="no-store" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=8,IE=9,IE=10" />
+		
+		<link href="${base.contextPath}/resources/css/base.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="${base.contextPath}/resources/js/easyui/themes/default/easyui.css" />
+        <link rel="stylesheet" type="text/css" href="${base.contextPath}/resources/js/easyui/themes/icon.css" />
+        <script type="text/javascript" src="${base.contextPath}/resources/js/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="${base.contextPath}/resources/js/jquery/jquery.contextMenu.js"></script>
+        <script type="text/javascript" src="${base.contextPath}/resources/js/jquery/jquery.form.js"></script>
+        <script type="text/javascript" src="${base.contextPath}/resources/js/easyui/jquery.easyui.min.js"></script>
+        <script type="text/javascript" src="${base.contextPath}/resources/js/easyui/locale/easyui-lang-zh_CN.js"></script>
+	    <script type="text/javascript" src="${base.contextPath}/resources/js/comm/base.js"></script>
+		
+		<style type="text/css">
+			.window-body,.dialog-content{
+				overflow:hidden;
+			}
+		</style>
+		
+		<script type="text/javascript">
+		    var dialogId = "${RequestParameters.dialogId?default('dialogId')}";
+		     
+			function closeDialog(){
+				if(window!=top){
+					top.$("#"+dialogId).dialog("close");
+				}else{
+					window.history.back();
+					return false;
+				}
+			}
+			
+			function callBack(rs){
+			    $.getCallbackData(dialogId,rs);
+			}
+		</script>
+		<#nested>
+ </head>
+</#macro>
+ 
+<#macro body>
+	 <body class="easyui-layout">
+	    <#nested>
+	 </body>
+</html>
+</#macro>

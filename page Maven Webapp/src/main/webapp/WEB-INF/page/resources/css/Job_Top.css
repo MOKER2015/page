@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*============================= 双向选择 弹窗 Start =============================*/
+.t_sxChoose {margin-top:0; padding-bottom:8px; width:454px; *width:472px; min-height:192px; height:auto!important; height:300px; border:1px solid #a4b9d1; background-color:#e0e9f7;}
+	.t_sxSearch {padding-left:14px; _padding-top:4px; height:40px; line-height:40px; _height:30px; 
+	    _line-height:30px; border-bottom:1px solid #a4b9d1; background-color:#f1f5fc; font-weight:bold; color:#1f4179;}
+	.text_sr {padding-left:5px; width:161px; height:20px; line-height:20px;
+	 border:1px solid #91a9c0; vertical-align:middle;}
+	.t_sxSearch select {height:30px; line-height:30px; vertical-align:middle;}
+	.btn_search, .btn_search_over {width:58px; height:24px; border:none; background:url(../images/btns.gif) no-repeat; cursor:pointer; vertical-align:middle;}
+	.btn_search {background-position:0px 0px;}
+	.btn_search_over {background-position:-63px 0px;}
+	
+	.t_szFlo1 {padding-left:8px;height:100%;}
+	.t_szFlo1F {float:left; width:182px;height:200px;}
+	.SelP {margin-top:0px; padding-top:6px; height:40px; line-height:20px; color:#8e9190;}
+	
+	.t_szChoBtn {float:left; margin-left:8px; margin-right:8px; padding-top:30px; *padding-top:40px;}
+	.t_szChoBtn input {margin-top:4px; display:block; width:58px; height:24px; border:none; }
+	.btn_AddOne,
+	.btn_AddAll,
+	.btn_RemoveOne,
+	.btn_RemoveAll,
+	.btn_AddOne_over,
+	.btn_AddAll_over,
+	.btn_RemoveOne_over,
+	.btn_RemoveAll_over {background:url(../images/btns.gif) no-repeat; cursor:pointer;}
+	 
+	.btn_AddOne {background-position:0px -32px;}
+	.btn_AddOne_over {background-position:-63px -32px;}
+	.btn_AddAll {background-position:0px -64px;}
+	.btn_AddAll_over {background-position:-63px -64px;}
+	.btn_RemoveOne {background-position:0px -96px;}
+	.btn_RemoveOne_over {background-position:-63px -96px;}
+	.btn_RemoveAll {background-position:0px -128px;}
+	.btn_RemoveAll_over {background-position:-63px -128px;}
+
+	.select_side{float:left; width:200px;}
+	#selectL, #selectR {margin-top:-12px; padding:3px; width:180px; height:100%; border:none; 
+	  background-color:#fff; border:1px solid #ccc;}
+.clear {clear:both; font-size:0px; height:0px; line-height:0px;}
+/*============================= 双向选择 弹窗 End =============================*/
+
+
+
+
+
+
+
+
+
